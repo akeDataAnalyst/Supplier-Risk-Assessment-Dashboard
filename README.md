@@ -3,7 +3,7 @@
 ### Project Overview
 This project demonstrates how to build a proactive risk assessment tool for supply chain management. It combines traditional performance metrics with an NLP-driven geopolitical risk score to provide a holistic view of supplier reliability. The final deliverable is an interactive dashboard built in Tableau Public.
 
-![Dashboard Screenshot](screenshots/dashboard_screenshot.png)
+![Dashboard Screenshot](screenshots/tableau_dashboard00.PNG)
 
 ### The Problem & Solution
 - **Problem:** Supply chain disruptions from poor supplier performance and unexpected global events can cause significant financial and operational damage.
@@ -22,7 +22,7 @@ This project demonstrates how to build a proactive risk assessment tool for supp
 
 ### Access the Live Dashboard
 You can explore the full, interactive dashboard here:
-[**Live Dashboard Link on Tableau Public**](your_tableau_public_url_here)
+[**Live Dashboard Link on Tableau Public**](https://public.tableau.com/app/profile/aklilu.abera/viz/Book1_17539027027600/Dashboard1)
 
 ---
 *Created by AKLILU ABERA*
