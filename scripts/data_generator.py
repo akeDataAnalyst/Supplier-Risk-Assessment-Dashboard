@@ -1,14 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 import pandas as pd
 import numpy as np
 from datetime import date, timedelta
 
-# --- Configuration ---
 NUM_SUPPLIERS = 50
 NUM_MONTHS = 12
 START_DATE = date(2024, 1, 1)
@@ -16,7 +10,6 @@ START_DATE = date(2024, 1, 1)
 # List of hypothetical countries our suppliers are in
 SUPPLIER_COUNTRIES = ['China', 'Mexico', 'USA', 'Germany', 'India', 'Brazil', 'Vietnam', 'Turkey', 'South Korea', 'Taiwan']
 
-# --- Generate Supplier Data ---
 np.random.seed(42) # for reproducibility
 
 supplier_ids = [f'SUP-{i:03d}' for i in range(1, NUM_SUPPLIERS + 1)]
@@ -27,7 +20,6 @@ suppliers_df = pd.DataFrame({
     'supplier_country': supplier_countries
 })
 
-# --- Generate Monthly Performance Data ---
 all_data = []
 current_date = START_DATE
 for i in range(NUM_MONTHS):
@@ -55,14 +47,11 @@ for i in range(NUM_MONTHS):
 
 performance_df = pd.concat(all_data, ignore_index=True)
 
-# Introduce some missing values to simulate real-world data issues
 performance_df.loc[performance_df.sample(frac=0.05).index, 'quality_score'] = np.nan
 performance_df.loc[performance_df.sample(frac=0.03).index, 'on_time_delivery_rate'] = np.nan
 
-# --- Combine and Save ---
 final_df = pd.merge(performance_df, suppliers_df, on='supplier_id')
 
-# Create a final column for "geopolitical_risk_score" which will be our target to populate later
 final_df['geopolitical_risk_score'] = 0.0
 
 # Save the dataset to a CSV file
@@ -71,16 +60,4 @@ final_df.to_csv('supplier_data.csv', index=False)
 print("Synthetic dataset created successfully!")
 print(final_df.head())
 print(f"Total rows: {len(final_df)}")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
