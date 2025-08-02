@@ -22,7 +22,7 @@ This project demonstrates how to build a proactive risk assessment tool for supp
 
 ### Access the Live Dashboard
 You can explore the full, interactive dashboard here:
-[**Live Dashboard Link on Tableau Public**](https://public.tableau.com/app/profile/aklilu.abera/viz/Book1_17539027027600/Dashboard1)
+[**Live Dashboard Link on Tableau Public**](https://public.tableau.com/app/profile/aklilu.abera/viz/SupplierRiskAssessmentDashboard/Dashboard1)
 
 ---
 *Created by AKLILU ABERA*
